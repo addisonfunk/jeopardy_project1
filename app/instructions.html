@@ -3,15 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>"JEOPARDY!"</title>
+  <title>"JEOPARDY! Instructions"</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
@@ -25,74 +21,18 @@
   <!-- endbuild -->
 </head>
 
-
-<!-- <button id="hide">Hide</button> -->
-<button id="show">LET'S PLAY!</button>
-
 <body>
   <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="container-fluid">
+<div class="container-fluid">
     <div class="header">
       <ul class="nav nav-pills pull-right">
-        <li class="active"><a href="/index.html">Home</a></li>
-        <li><a href="/instructions.html">Instructions</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="app/instructions.html">Instructions</a></li>
       </ul>
       <h1>JEOPARDY!</h1>
     </div>
-    <!--JEOPARDY GRID-->
-    <div class="row">
-      <div class="game-board">
-        <div class="subject-row">
-          <div id="categoryOne" class="col-md-2 col-md-offset-1">WORLDLY</div>
-          <div id="categoryTwo" class="col-md-2">MOVIES</div>
-          <div id="categoryThree" class="col-md-2">SUBJECT</div>
-          <div id="categoryFour" class="col-md-2">SUBJECT</div>
-        </div>
-        <div class="panel-body" id="main-board">
-          <!--div class row-->
-          <div class="category col-md-2 col-md-offset-1">
-            <button class="well question" id="questionOne">$200</button>
-            <button class="well question" id="questionTwo">$400</button>
-            <button class="well question" id="questionThree">$600</button>
-            <button class="well question" id="questionFour">$800</button>
-          </div>
-          <div class="category col-md-2">
-            <button class="well question" id="questionFive">$200</button>
-            <button class="well question" id="questionSix">$400</button>
-            <button class="well question" id="questionSeven">$600</button>
-            <button class="well question" id="questionEight">$800</button>
-          </div>
-          <div class="category col-md-2">
-            <button class="well question" id="questionNine">$200</button>
-            <button class="well question" id="questionTen">$400</button>
-            <button class="well question" id="questionEleven">$600</button>
-            <button class="well question" id="questionTwelve">$800</button>
-          </div>
-          <div class="category col-md-2">
-            <button class="well question" id="questionThirteen">$200</button>
-            <button class="well question" id="questionFourteen">$400</button>
-            <button class="well question" id="questionFifteen">$600</button>
-            <button class="well question" id="questionSixteen">$800</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="panel-footer">
-    <h4>Score: </h4>
-    <div id="score">$0</div>
-  </div>
-  <!--SCOREBOARD
-  <div class="panel-footer">
-    <input class="col-md-3" id="name" placeholder='Type your name'>
-    <h2 class="col-md-3" id="user-name"></h2>
-    <div class="pull-right"><h4>Score: <span id="score">0</span></h4></div>
-    <div class="clearfix"></div>
-    </div>
-  </div>
-</div> -->
   <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>

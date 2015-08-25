@@ -84,45 +84,50 @@ console.log('Welcome to Jeopardy!');
 //     if( r ) alert('You entered ' + r);
 // });
 
+//------------------------------SHOW AND HIDE
+$(document).ready(function() {
+    $('#show').click(function() {
+        $('.row').toggle();
+    });
+});
 
-//SCORE FUNCTION
-function updateScore() {
-  chosen = ($(prompt).val());
-  if (chosen == category.answer) {
-    score++;
-  }
-  $('#score').html('Score: ' + category.value);
+//------------------------------KEEPING SCORE - IF/ELSE STATEMENT
+var score = 0;
+var sum = 0;
+
+function updateScore(score) {
+    sum += score;
+    $('#score').html('$' + sum);
 }
 
-
-// update the score, duck positions, orientations, and state
-// function step() {
-// //this allows the score to update every 5 seconds
-//   updateScore();
-
-//QUESTIONS CLICK FUNCTION
-//COLUMN ONE
+//------------------------------QUESTIONS CLICK FUNCTION
+//------------------------------COLUMN ONE
 function clickQuestion1() {
     var questionOne = [{
         name: 'Worldly',
-        question: 'How many U.S. states border the Gulf of Mexico?',
-        answer: 'WHAT IS FIVE'
+        question: 'This was the official language in 87 nations and territories in 1994',
+        answer: 'WHAT IS ENGLISH'
     }];
-    var value = '$200';
+    var value = '200';
     $.each(questionOne, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionOne, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-              if ( response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n \n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-              }
-              else {
+                updateScore(parseInt(value));
+
+            }
+            else {
                 $(alert('That is incorrect.'));
-              }
+            }
         });
     });
-    updateScore();
 }
+
+//PLACEHOLDER FOR QUESTIONSD
 
 function clickQuestion2() {
     var questionTwo = [{
@@ -130,33 +135,43 @@ function clickQuestion2() {
         question: 'This continent is comprised of 51 countries.',
         answer: 'WHAT IS EUROPE'
     }];
-    var value = '$400';
+    var value = '400';
     $.each(questionTwo, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionTwo, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-              if ( response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                $updateScore();
-              }
-              else {
+                updateScore(parseInt(value));
+
+            }
+            else {
                 $(alert('That is incorrect.'));
-              }
+            }
         });
     });
-    updateScore();
 }
 
 function clickQuestion3() {
     var questionThree = [{
         name: 'Worldly',
-        question: 'question three here'
+        question: 'The third-largest continent in square miles.',
+        answer: 'WHAT IS NORTH AMERICA'
     }];
     var value = '$600';
     $.each(questionThree, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionThree, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
@@ -164,79 +179,119 @@ function clickQuestion3() {
 function clickQuestion4() {
     var questionFour = [{
         name: 'Worldly',
-        question: "question four here"
+        question: 'This country is only bordered by Spain.',
+        answer: 'WHAT IS PORTUGAL'
     }];
     var value = "$800";
     $.each(questionFour, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFour, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 
 
-//COLUMN TWO
+//------------------------------COLUMN TWO
 function clickQuestion5() {
     var questionFive = [{
-        name: 'Category Two Here',
-        question: "question five here"
+        name: 'Movies',
+        question: "This late 90s film starred Richard Gere and Julia Roberts.",
+        answer: 'WHAT IS THE RUNAWAY BRIDE'
     }];
     var value = "$200";
     $.each(questionFive, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFive, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion6() {
     var questionSix = [{
-        name: 'Category Two Here',
-        question: "question six here"
+        name: 'Movies',
+        question: 'This 1975 blockbuster shows Roy Scheider utter: "We need a bigger boat."',
+        answer: 'WHAT IS JAWS'
     }];
     var value = "$400";
     $.each(questionSix, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionSix, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion7() {
     var questionSeven = [{
-        name: 'Category Two Here',
-        question: "question seven here"
+        name: 'Movies',
+        question: 'This Adam Sandler comedy featured Bob Barkers screen debut.',
+        answer: 'WHAT IS HAPPY GILMORE'
     }];
     var value = "$600";
     $.each(questionSeven, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionSeven, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion8() {
     var questionEight = [{
-        name: 'Category Two Here',
-        question: "question eight here"
+        name: 'Movies',
+        question: 'This title role was played by more than 40 characters in a 1995 Oscar-winning movie',
+        answer: 'WHAT IS BABE'
     }];
     var value = "$800";
     $.each(questionEight, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionEight, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+            if (response === category.answer) {
+                $(alert('That is correct!'));
+                updateScore(value);
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 
 
-//COLUMN THREE
+//------------------------------COLUMN THREE
 function clickQuestion9() {
     var questionNine = [{
         name: 'Category Three Here',
@@ -294,7 +349,7 @@ function clickQuestion12() {
 }
 
 
-//COLUMN FOUR
+//------------------------------COLUMN FOUR
 function clickQuestion13() {
     var questionThirteen = [{
         name: 'Category Four Here',
@@ -351,99 +406,82 @@ function clickQuestion16() {
     });
 }
 
-//Clicking the values to make them react
-//COLUMN ONE CLICKS
+//------------------------------Clicking the values to make them react
+//------------------------------COLUMN ONE CLICKS
 $('#questionOne').click(clickQuestion1);
 $('#questionTwo').click(clickQuestion2);
 $('#questionThree').click(clickQuestion3);
 $('#questionFour').click(clickQuestion4);
 
-//COLUMN TWO CLICKS
+//------------------------------COLUMN TWO CLICKS
 $('#questionFive').click(clickQuestion5);
 $('#questionSix').click(clickQuestion6);
 $('#questionSeven').click(clickQuestion7);
 $('#questionEight').click(clickQuestion8);
 
-//COLUMN THREE CLICKS
+//------------------------------COLUMN THREE CLICKS
 $('#questionNine').click(clickQuestion9);
 $('#questionTen').click(clickQuestion10);
 $('#questionEleven').click(clickQuestion11);
 $('#questionTwelve').click(clickQuestion12);
 
-//COLUMN FOUR CLICKS
+//------------------------------COLUMN FOUR CLICKS
 $('#questionThirteen').click(clickQuestion13);
 $('#questionFourteen').click(clickQuestion14);
 $('#questionFifteen').click(clickQuestion15);
 $('#questionSixteen').click(clickQuestion16);
 
 
-//HIDE SQUARE AFTER CLICK
+//------------------------------HIDE SQUARE AFTER CLICK
 document.getElementById('questionOne').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionTwo').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionThree').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionFour').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 
 document.getElementById('questionFive').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionSix').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionSeven').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionEight').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 
 document.getElementById('questionNine').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionTen').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionEleven').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionTwelve').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 
 
 document.getElementById('questionThirteen').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionFourteen').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionFifteen').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
 document.getElementById('questionSixteen').onclick = function(e) {
-  e.target.style.visibility = 'hidden';
+    e.target.style.visibility = 'hidden';
 }
-
-
-
-
-//KEEPING SCORE - IF/ELSE STATEMENT
-var score = 0;
-function updateScore() {
-    $('#score').empty().text(score);
-}
-
-// get everything going.
-// $(function() {
-//   $('.duck').on('click', function(event) {
-//     die($(event.target));
-//   });
-//   setInterval(step, gameSpeed);
-// });

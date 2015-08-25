@@ -1,91 +1,100 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
 button {
-  background-color: black;
-  position: relative;
+    background-color: black;
+    position: relative;
 }
+
 h1 {
-  font-family: 'Megrim', cursive;
-  font-size: 6em;
-  color: #FF9933;
-  text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 6em;
+    color: #FF9933;
+    text-align: center;
 }
 
 h2 {
-  text-align: right;
-  text-size: 1em;
+    text-align: right;
+    text-size: 1em;
 }
+
 h4 {
-  text-size: 3em;
+    text-size: 3em;
 }
 
 #categoryOne {
-  font-size: 2em;
-  text-align: center;
+    font-size: 2em;
+    text-align: center;
 }
+
 #categoryTwo {
-  font-size: 2em;
-  text-align: center;
+    font-size: 2em;
+    text-align: center;
 }
+
 #categoryThree {
-  font-size: 2em;
-  text-align: center;
+    font-size: 2em;
+    text-align: center;
 }
+
 #categoryFour {
-  font-size: 2em;
-  text-align: center;
+    font-size: 2em;
+    text-align: center;
 }
+
 #name {
-  text-align: center;
-  padding: 0px;
+    text-align: center;
+    padding: 0px;
 }
+
+#score {
+    text-size: 2em;
+}
+
 #user-name {
-  text-align: center;
-  padding: 0px;
+    text-align: center;
+    padding: 0px;
 }
 
 .category {
-  padding: 5%;
-  background-color: #33CCCC;
-  text-align: center;
-  color: white;
-  font-family:'Fredericka the Great', cursive;
-  margin-bottom: 20px;
-  position: relative;
-}
-.game-board {
-  position: relative;
-  background-color: white;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.panel-footer {
-  padding: 60px;
-  font-family:'Poiret One', cursive;
-}
-.pull-right {
-  text-size: 3em;
-}
-//Controls the question buttons on the gameboard
-.question {
-  position: relative;
-  height: 100px;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  cursor: pointer;
-  color: black;
-}
-.subject-row {
-  font-family: 'Megrim', cursive;
-  text-align: center;
-  text-size: 3.5em;
+    padding: 5%;
+    background-color: #33CCCC;
+    text-align: center;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    margin-bottom: 20px;
+    position: relative;
 }
 
+.game-board {
+    position: relative;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.panel-footer {
+    padding: 60px;
+    font-family: 'Poiret One', cursive;
+}
+
+//Controls the question buttons on the gameboard
+.question {
+    position: relative;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    color: black;
+}
+
+.subject-row {
+    font-family: 'Megrim', cursive;
+    text-align: center;
+    text-size: 3.5em;
+}
