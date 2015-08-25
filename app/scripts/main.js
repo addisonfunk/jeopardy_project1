@@ -84,24 +84,36 @@ console.log('Welcome to Jeopardy!');
 //     if( r ) alert('You entered ' + r);
 // });
 
-function correctAnswer() {
-    var answerTrue = (category.answer);
+
+//SCORE FUNCTION
+function updateScore() {
+  chosen = ($(prompt).val());
+  if (chosen == category.answer) {
+    score++;
+  }
+  $('#score').html('Score: ' + category.value);
 }
+
+
+// update the score, duck positions, orientations, and state
+// function step() {
+// //this allows the score to update every 5 seconds
+//   updateScore();
 
 //QUESTIONS CLICK FUNCTION
 //COLUMN ONE
 function clickQuestion1() {
     var questionOne = [{
-        name: 'Category One Here',
-        question: 'question one here',
-        answer: 'What is ... answer'
+        name: 'Worldly',
+        question: 'How many U.S. states border the Gulf of Mexico?',
+        answer: 'WHAT IS FIVE'
     }];
     var value = '$200';
     $.each(questionOne, function(i, category) {
-        alert('Category: ' + category.name + ' Question: ' + category.question);
+        alert('Category: ' + category.name);
         $.each(questionOne, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS): ');
-              if ( response === 'What is ... answer') {
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+              if ( response === category.answer) {
                 $(alert('That is correct!'));
               }
               else {
@@ -109,25 +121,35 @@ function clickQuestion1() {
               }
         });
     });
+    updateScore();
 }
 
 function clickQuestion2() {
     var questionTwo = [{
-        name: 'Category One Here',
-        question: 'question two here'
+        name: 'Worldly',
+        question: 'This continent is comprised of 51 countries.',
+        answer: 'WHAT IS EUROPE'
     }];
     var value = '$400';
     $.each(questionTwo, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionTwo, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
+              if ( response === category.answer) {
+                $(alert('That is correct!'));
+                $updateScore();
+              }
+              else {
+                $(alert('That is incorrect.'));
+              }
         });
     });
+    updateScore();
 }
 
 function clickQuestion3() {
     var questionThree = [{
-        name: 'Category One Here',
+        name: 'Worldly',
         question: 'question three here'
     }];
     var value = '$600';
@@ -141,7 +163,7 @@ function clickQuestion3() {
 
 function clickQuestion4() {
     var questionFour = [{
-        name: 'Category One Here',
+        name: 'Worldly',
         question: "question four here"
     }];
     var value = "$800";
@@ -355,15 +377,73 @@ $('#questionFifteen').click(clickQuestion15);
 $('#questionSixteen').click(clickQuestion16);
 
 
+//HIDE SQUARE AFTER CLICK
+document.getElementById('questionOne').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionTwo').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionThree').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionFour').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+
+document.getElementById('questionFive').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionSix').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionSeven').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionEight').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+
+document.getElementById('questionNine').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionTen').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionEleven').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionTwelve').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+
+
+document.getElementById('questionThirteen').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionFourteen').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionFifteen').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+document.getElementById('questionSixteen').onclick = function(e) {
+  e.target.style.visibility = 'hidden';
+}
+
+
+
+
 //KEEPING SCORE - IF/ELSE STATEMENT
-
 var score = 0;
-
 function updateScore() {
     $('#score').empty().text(score);
 }
 
-//SCORE FUNCTION -- change numKilled
-// function updateScore() {
-//   $('.score').html('Score: ' + numKilled);
-// }
+// get everything going.
+// $(function() {
+//   $('.duck').on('click', function(event) {
+//     die($(event.target));
+//   });
+//   setInterval(step, gameSpeed);
+// });
