@@ -18,6 +18,6 @@ The focus of this project was to practice some fundamental skills we have learne
 
 [Jeopardy Wireframe](http://imgur.com/wHmzqfr)
 
-[Trello Board]https://trello.com/b/LuUhSt5y/jeopardy-project1
+[Trello Board](https://trello.com/b/LuUhSt5y/jeopardy-project1)
 
 I hope you enjoy testing your knowledge of each category. I intend to continue this game development to make the best product I can.
