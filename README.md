@@ -14,4 +14,10 @@ The focus of this project was to practice some fundamental skills we have learne
 -jQuery
 -Git
 
+Jeopardy Process Steps:
+<img src="../app/images/jeopardy_process_steps.jpg">
+
+Jeopardy Wireframe:
+<img src="../app/images/jeopardy_wireframe.jpg">
+
 I hope you enjoy testing your knowledge of each category. I intend to continue this game development to make the best product I can.
