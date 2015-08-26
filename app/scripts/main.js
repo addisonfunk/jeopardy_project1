@@ -8,95 +8,6 @@
 
 console.log('Welcome to Jeopardy!');
 
-// function foo() {
-//     var alert = myCustomLib.customAlert;
-//     alert();
-// }
-
-//removeAttribute('disabled')
-
-//KEYUP - type name
-// $('#name').keyup(updateName);
-
-// function updateName() {
-//     var name = $('#name').val();
-//     $('#user-name').text(name);
-//     console.log('keyup! ' + name);
-// }
-
-// var questions = [{
-//         name: 'Category One Here',
-//         question: "question one here",
-//         value: "$200"
-//     }, {
-//         name: 'Category Two Here',
-//         question: "question one here",
-//         value: "$200"
-
-//     }
-// ]
-
-// Marc crappy suggestion
-// function clickQuestion(question, value){
-
-
-// }
-
-// clickQuestion(questions[0])
-
-// questions.name
-// questions.question
-// question.value
-
-
-// var questions = [
-//   {
-//     name: 'Category 1',
-//     clues: [
-//             'question 1 here',
-//             'question 2 here',
-//             'question 3 here',
-//             'question 4 here',
-//             ]
-//   },
-//   {
-//     name: 'Category 2',
-//     clues: [
-//             'question 1 here',
-//             'question 2 here',
-//             'question 3 here',
-//             'question 4 here',
-//             ]
-//   },
-//   {
-//     name: 'Category 3',
-//     clues: [
-//             'question 1 here',
-//             'question 2 here',
-//             'question 3 here',
-//             'question 4 here',
-//             ]
-//   },
-//   {
-//     name: 'Category 4',
-//     clues: [
-//             'question 1 here',
-//             'question 2 here',
-//             'question 3 here',
-//             'question 4 here',
-//             ]
-//   },
-// ];
-
-// var values = ['$200', '$400', '$600', '$800'];
-
-
-
-// jPrompt('Type something:', 'Prefilled value', 'Prompt Dialog', function(r) {
-//     if( r ) alert('You entered ' + r);
-// });
-
-
 //------------------------------KEEPING SCORE - IF/ELSE STATEMENT
 var sum = 0;
 
@@ -557,55 +468,87 @@ $('#questionSixteen').click(clickQuestion16);
 
 
 //------------------------------HIDE SQUARE AFTER CLICK
-document.getElementById('questionOne').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionOne').onclick = function() {
+    $('#questionOne').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionTwo').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionTwo').onclick = function() {
+    $('#questionTwo').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionThree').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionThree').onclick = function() {
+    $('#questionThree').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionFour').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
-};
-
-document.getElementById('questionFive').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
-};
-document.getElementById('questionSix').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
-};
-document.getElementById('questionSeven').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
-};
-document.getElementById('questionEight').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionFour').onclick = function() {
+    $('#questionFour').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
 
-document.getElementById('questionNine').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionFive').onclick = function() {
+    $('#questionFive').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionTen').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionSix').onclick = function() {
+    $('#questionSix').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionEleven').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionSeven').onclick = function() {
+    $('#questionSeven').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionTwelve').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionEight').onclick = function() {
+    $('#questionEight').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
+};
+
+document.getElementById('questionNine').onclick = function() {
+    $('#questionNine').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
+};
+document.getElementById('questionTen').onclick = function() {
+    $('#questionTen').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
+};
+document.getElementById('questionEleven').onclick = function() {
+    $('#questionEleven').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
+};
+document.getElementById('questionTwelve').onclick = function() {
+    $('#questionTwelve').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
 
 
-document.getElementById('questionThirteen').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionThirteen').onclick = function() {
+    $('#questionThirteen').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionFourteen').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionFourteen').onclick = function() {
+    $('#questionFourteen').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionFifteen').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionFifteen').onclick = function() {
+    $('#questionFifteen').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };
-document.getElementById('questionSixteen').onclick = function(e) {
-    e.target.style.visibility = 'hidden';
+document.getElementById('questionSixteen').onclick = function() {
+    $('#questionSixteen').attr('id', 'trebekImage');
+    $('#trebekImage').text('');
+    $('#trebekImage').css('width', '88px');
 };

@@ -2,8 +2,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
-
 a {
     background-color: black;
     font-family: Times New Roman;
@@ -13,6 +11,7 @@ a {
 a:focus {
     background-color: teal;
 }
+
 button {
     background-color: black;
     position: relative;
@@ -31,35 +30,34 @@ h2 {
 }
 
 h3 {
-  text-align: center;
-  text-size: 1em;
-  font-family: Times New Roman;
+    text-align: center;
+    text-size: 1em;
+    font-family: Times New Roman;
 }
 
 h4 {
     text-size: 3em;
 }
+
 h5 {
-  text-align: center;
-  text-size: 3em;
-  color: #33CCCC;
-  font-family: Arial Narrow;
-  width: 1100px;
+    text-align: center;
+    text-size: 3em;
+    color: #33CCCC;
+    font-family: Arial Narrow;
+    width: 1100px;
 }
 
 img {
-  text-align: center;
-  position: float;
+    text-align: center;
+    position: float;
 }
 
 p {
-  text-align: center;
-  text-size: 5em;
-  width: 1100px;
-  height: 600px;
+    text-align: center;
+    text-size: 5em;
+    width: 1100px;
+    height: 600px;
 }
-
-
 
 #categoryOne {
     font-size: 2em;
@@ -90,14 +88,21 @@ p {
     text-size: 2em;
 }
 
+#trebekImage {
+    background: url(http://www.jeopardy.com/minisites/mustache/img/alex-head.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #user-name {
     text-align: center;
     padding: 0px;
 }
 
 .active {
-  font-family: 'Fredericka the Great', cursive;
-  color: black;
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
 }
 
 .category {
