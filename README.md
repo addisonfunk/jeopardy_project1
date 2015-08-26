@@ -14,4 +14,4 @@ The focus of this project was to practice some fundamental skills we have learne
 -jQuery
 -Git
 
-I hope you enjoy testing your knowledge of each category. I intend to continue this game development to make the best prodcut I can.
+I hope you enjoy testing your knowledge of each category. I intend to continue this game development to make the best product I can.

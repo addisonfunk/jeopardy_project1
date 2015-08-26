@@ -88,11 +88,59 @@ p {
     text-size: 2em;
 }
 
-#trebekImage {
+@mixin trebek {
     background: url(http://www.jeopardy.com/minisites/mustache/img/alex-head.png);
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position: center;
+}
+#trebekImage1 {
+    @include trebek;
+}
+#trebekImage2 {
+    @include trebek;
+}
+#trebekImage3 {
+    @include trebek;
+}
+#trebekImage4 {
+    @include trebek;
+}
+#trebekImage5 {
+    @include trebek;
+}
+#trebekImage6 {
+    @include trebek;
+}
+#trebekImage7 {
+    @include trebek;
+}
+#trebekImage8 {
+    @include trebek;
+}
+#trebekImage9 {
+    @include trebek;
+}
+#trebekImage10 {
+    @include trebek;
+}
+#trebekImage11 {
+    @include trebek;
+}
+#trebekImage12 {
+    @include trebek;
+}
+#trebekImage13 {
+    @include trebek;
+}
+#trebekImage14 {
+    @include trebek;
+}
+#trebekImage15 {
+    @include trebek;
+}
+#trebekImage16 {
+    @include trebek;
 }
 
 #user-name {

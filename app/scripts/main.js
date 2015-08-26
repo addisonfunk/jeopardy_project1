@@ -467,88 +467,88 @@ $('#questionFifteen').click(clickQuestion15);
 $('#questionSixteen').click(clickQuestion16);
 
 
-//------------------------------HIDE SQUARE AFTER CLICK
+//------------------------------HIDE SQUARE AFTER CLICK WITH TREBEK IMAGE
 document.getElementById('questionOne').onclick = function() {
-    $('#questionOne').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionOne').attr('id', 'trebekImage1');
+    $('#trebekImage1').text('');
+    $('#trebekImage1').css('width', '88px');
 };
 document.getElementById('questionTwo').onclick = function() {
-    $('#questionTwo').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionTwo').attr('id', 'trebekImage2');
+    $('#trebekImage2').text('');
+    $('#trebekImage2').css('width', '88px');
 };
 document.getElementById('questionThree').onclick = function() {
-    $('#questionThree').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionThree').attr('id', 'trebekImage3');
+    $('#trebekImage3').text('');
+    $('#trebekImage3').css('width', '88px');
 };
 document.getElementById('questionFour').onclick = function() {
-    $('#questionFour').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionFour').attr('id', 'trebekImage4');
+    $('#trebekImage4').text('');
+    $('#trebekImage4').css('width', '88px');
 };
 
 document.getElementById('questionFive').onclick = function() {
-    $('#questionFive').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionFive').attr('id', 'trebekImage5');
+    $('#trebekImage5').text('');
+    $('#trebekImage5').css('width', '88px');
 };
 document.getElementById('questionSix').onclick = function() {
-    $('#questionSix').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionSix').attr('id', 'trebekImage6');
+    $('#trebekImage6').text('');
+    $('#trebekImage6').css('width', '88px');
 };
 document.getElementById('questionSeven').onclick = function() {
-    $('#questionSeven').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionSeven').attr('id', 'trebekImage7');
+    $('#trebekImage7').text('');
+    $('#trebekImage7').css('width', '88px');
 };
 document.getElementById('questionEight').onclick = function() {
-    $('#questionEight').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionEight').attr('id', 'trebekImage8');
+    $('#trebekImage8').text('');
+    $('#trebekImage8').css('width', '88px');
 };
 
 document.getElementById('questionNine').onclick = function() {
-    $('#questionNine').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionNine').attr('id', 'trebekImage9');
+    $('#trebekImage9').text('');
+    $('#trebekImage9').css('width', '88px');
 };
 document.getElementById('questionTen').onclick = function() {
-    $('#questionTen').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionTen').attr('id', 'trebekImage10');
+    $('#trebekImage10').text('');
+    $('#trebekImage10').css('width', '88px');
 };
 document.getElementById('questionEleven').onclick = function() {
-    $('#questionEleven').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionEleven').attr('id', 'trebekImage11');
+    $('#trebekImage11').text('');
+    $('#trebekImage11').css('width', '88px');
 };
 document.getElementById('questionTwelve').onclick = function() {
-    $('#questionTwelve').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionTwelve').attr('id', 'trebekImage12');
+    $('#trebekImage12').text('');
+    $('#trebekImage12').css('width', '88px');
 };
 
 
 document.getElementById('questionThirteen').onclick = function() {
-    $('#questionThirteen').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionThirteen').attr('id', 'trebekImage13');
+    $('#trebekImage13').text('');
+    $('#trebekImage13').css('width', '88px');
 };
 document.getElementById('questionFourteen').onclick = function() {
-    $('#questionFourteen').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionFourteen').attr('id', 'trebekImage14');
+    $('#trebekImage14').text('');
+    $('#trebekImage14').css('width', '88px');
 };
 document.getElementById('questionFifteen').onclick = function() {
-    $('#questionFifteen').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionFifteen').attr('id', 'trebekImage15');
+    $('#trebekImage15').text('');
+    $('#trebekImage15').css('width', '88px');
 };
 document.getElementById('questionSixteen').onclick = function() {
-    $('#questionSixteen').attr('id', 'trebekImage');
-    $('#trebekImage').text('');
-    $('#trebekImage').css('width', '88px');
+    $('#questionSixteen').attr('id', 'trebekImage16');
+    $('#trebekImage16').text('');
+    $('#trebekImage16').css('width', '88px');
 };
