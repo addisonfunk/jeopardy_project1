@@ -84,12 +84,6 @@ console.log('Welcome to Jeopardy!');
 //     if( r ) alert('You entered ' + r);
 // });
 
-//------------------------------SHOW AND HIDE
-$(document).ready(function() {
-    $('#show').click(function() {
-        $('.row').toggle();
-    });
-});
 
 //------------------------------KEEPING SCORE - IF/ELSE STATEMENT
 var score = 0;
@@ -127,7 +121,7 @@ function clickQuestion1() {
     });
 }
 
-//PLACEHOLDER FOR QUESTIONSD
+//ADD in a PLACEHOLDER FOR QUESTIONS
 
 function clickQuestion2() {
     var questionTwo = [{
@@ -164,10 +158,13 @@ function clickQuestion3() {
     $.each(questionThree, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionThree, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -186,10 +183,13 @@ function clickQuestion4() {
     $.each(questionFour, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFour, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -211,10 +211,13 @@ function clickQuestion5() {
     $.each(questionFive, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFive, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -233,10 +236,13 @@ function clickQuestion6() {
     $.each(questionSix, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionSix, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -255,10 +261,13 @@ function clickQuestion7() {
     $.each(questionSeven, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionSeven, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -277,10 +286,13 @@ function clickQuestion8() {
     $.each(questionEight, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionEight, function(i, question) {
-            var response = prompt('Question: ' + category.question + 'Type your answer here (using all CAPS and no punctuation): ');
-            if (response === category.answer) {
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
                 $(alert('That is correct!'));
-                updateScore(value);
+                updateScore(parseInt(value));
+
             }
             else {
                 $(alert('That is incorrect.'));
@@ -290,60 +302,103 @@ function clickQuestion8() {
 }
 
 
-
 //------------------------------COLUMN THREE
 function clickQuestion9() {
     var questionNine = [{
-        name: 'Category Three Here',
-        question: "question nine here"
+        name: 'The Universe',
+        question: "This planet is 4.5 billion years old.",
+        answer: 'WHAT IS EARTH'
     }];
     var value = "$200";
     $.each(questionNine, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionNine, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion10() {
     var questionTen = [{
-        name: 'Category Three Here',
-        question: "question ten here"
+        name: 'The Universe',
+        question: 'This planet spins the fastest, rotating once every 10 hours.',
+        answer: 'WHAT IS JUPITER'
     }];
     var value = "$400";
     $.each(questionTen, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionTen, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion11() {
     var questionEleven = [{
-        name: 'Category Three Here',
-        question: "question ten here"
+        name: 'The Universe',
+        question: "This nuclear reaction (the same that powers a hydrogen bomb) powers the sun.",
+        answer: 'WHAT IS FUSION'
     }];
     var value = "$600";
     $.each(questionEleven, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionEleven, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
 
 function clickQuestion12() {
     var questionTwelve = [{
-        name: 'Category Three Here',
-        question: "question twelve here"
+        name: 'The Universe',
+        question: 'This spiral galaxy has a mass between 750 billion and one trillion solar masses with a dimater of 100,000 light years.',
+        answer: 'WHAT IS THE MILKY WAY'
     }];
     var value = "$800";
     $.each(questionTwelve, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionTwelve, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
@@ -359,7 +414,17 @@ function clickQuestion13() {
     $.each(questionThirteen, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionThirteen, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
@@ -373,7 +438,17 @@ function clickQuestion14() {
     $.each(questionFourteen, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFourteen, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
@@ -387,7 +462,17 @@ function clickQuestion15() {
     $.each(questionFifteen, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionFifteen, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }
@@ -401,7 +486,17 @@ function clickQuestion16() {
     $.each(questionSixteen, function(i, category) {
         alert('Category: ' + category.name);
         $.each(questionSixteen, function(i, question) {
-            prompt('Question: ' + category.question + ', value = ' + value);
+
+            var response = prompt('Question: ' + category.question + '\n Type your answer here: ' + '\n Helpful Hint: use all CAPS and start with (WHAT IS).');
+
+            if (response == category.answer) {
+                $(alert('That is correct!'));
+                updateScore(parseInt(value));
+
+            }
+            else {
+                $(alert('That is incorrect.'));
+            }
         });
     });
 }

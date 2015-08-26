@@ -2,6 +2,17 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+
+a {
+    background-color: black;
+    font-family: Times New Roman;
+    color: white;
+}
+
+a:focus {
+    background-color: teal;
+}
 button {
     background-color: black;
     position: relative;
@@ -19,9 +30,27 @@ h2 {
     text-size: 1em;
 }
 
+h3 {
+  text-align: left;
+  text-size: 1em;
+  font-family: Times New Roman;
+}
+
 h4 {
     text-size: 3em;
 }
+h5 {
+  text-align: left;
+  text-size: 3em;
+  color: #33CCCC;
+  font-family: Arial Narrow;
+}
+p {
+  text-align: left;
+  text-size: 5em;
+}
+
+
 
 #categoryOne {
     font-size: 2em;
@@ -55,6 +84,11 @@ h4 {
 #user-name {
     text-align: center;
     padding: 0px;
+}
+
+.active {
+  font-family: 'Fredericka the Great', cursive;
+  color: black;
 }
 
 .category {
